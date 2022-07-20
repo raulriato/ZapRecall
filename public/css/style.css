@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght,CASL,MONO@400,1,0.5;700,1,0.5&display=swap');
+
+body {
+    font-family: 'Recursive', sans-serif;
+    background-color: rgb(251, 107, 107);
+}
+
+p {
+    font-weight: 400;
+    color: red;
+}
+
