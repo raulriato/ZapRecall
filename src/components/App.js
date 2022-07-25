@@ -1,6 +1,10 @@
-import EntryScreen from "./EntryScreen";
+import React from "react";
+import Screen from "./Screen";
 
-const App = () => <>
-    <EntryScreen />
-</>
-export default App;
+export default function App(){
+    return (
+        <>
+            <Screen />
+        </>
+    )
+}
