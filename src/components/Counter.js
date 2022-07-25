@@ -17,8 +17,7 @@ export default function Counter({ counter, icons }) {
             </div>
         )
     } else {
-        const notRecalled = icons.filter(recall => recall === 'close-circle-sharp')
-        console.log(notRecalled)
+        const notRecalled = icons.filter(recall => recall === 'close-circle-sharp');
         return (
         <div className="finished-recall">
             <FinishedRecall notRecalled={notRecalled} />
