@@ -29,7 +29,7 @@ export default function Cards() {
         },
         {
             question: 'Usamos props para __',
-            answer: '7. passar diferentes informações para componentes'
+            answer: 'passar diferentes informações para componentes'
         },
         {
             question: 'Usamos estado (state) para __',

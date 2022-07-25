@@ -1,8 +1,18 @@
-export default function Question({question, answer, turnCard}){
-    return (
-        <div className="opened-card" onClick={turnCard}>
+import React from "react"
+import Answer from "./Answer"
+
+export default function Question({question, answer}){
+
+    const [seeAnswer, setSeeAnswer] = React.useState(false)
+
+    function showAnswer(){
+        setSeeAnswer(!seeAnswer)
+    }
+
+    return ( !seeAnswer ? 
+        <div className="opened-card">
             <p>{question}</p>
-            <img src="./images/Vector.svg" alt="" />
-        </div>
+            <img src="./images/Vector.svg" alt="" onClick={showAnswer} />
+        </div> : <Answer answer={answer} />
     )
 }
