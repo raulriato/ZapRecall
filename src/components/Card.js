@@ -12,6 +12,6 @@ export default function Card({question, id, answer}) {
         <div className='card' onClick={turnCard}>
             <span>Pergunta {id}</span>
             <ion-icon name="play-outline"></ion-icon>
-        </div> : <Question question={question} answer={answer} turnCard={turnCard} />
+        </div> : <Question id={id} question={question} answer={answer} turnCard={turnCard} />
     )
 }

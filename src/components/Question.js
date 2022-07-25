@@ -1,7 +1,7 @@
 import React from "react"
 import Answer from "./Answer"
 
-export default function Question({question, answer}){
+export default function Question({question, answer, id}){
 
     const [seeAnswer, setSeeAnswer] = React.useState(false)
 
@@ -13,6 +13,6 @@ export default function Question({question, answer}){
         <div className="opened-card">
             <p>{question}</p>
             <img src="./images/Vector.svg" alt="" onClick={showAnswer} />
-        </div> : <Answer answer={answer} />
+        </div> : <Answer answer={answer} id={id} />
     )
 }

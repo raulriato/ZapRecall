@@ -149,3 +149,19 @@ h1 {
 .orange {
     background-color: rgba(255, 146, 46, 1);
 }
+
+.no-recall span, .almost-recall span, .zap span {
+    text-decoration-line: line-through;
+}
+
+.no-recall span, .no-recall ion-icon {
+    color: rgba(255, 48, 48, 1);
+}
+
+.almost-recall span, .almost-recall ion-icon {
+    color: rgba(255, 146, 46, 1);
+}
+
+.zap span, .zap ion-icon {
+    color: rgba(47, 190, 52, 1);
+}
