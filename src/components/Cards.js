@@ -1,6 +1,6 @@
 import Card from "./Card";
 
-export default function Cards() {
+export default function Cards({ setCounter, counter, icons, setAnsweredIcons }) {
 
     const cards = [
         {
@@ -37,15 +37,17 @@ export default function Cards() {
         }
     ];
 
-    const shuffledcards = cards.sort(() => Math.random() -0.5);
+    const shuffledcards = cards.sort(() => Math.random() - 0.5);
     const cardsToTheGame = [];
-    for(let i = 0; i < 4; i++){
+    for (let i = 0; i < 4; i++) {
         cardsToTheGame.push(shuffledcards[i]);
-        cardsToTheGame[i].id = i+1;
+        cardsToTheGame[i].id = i + 1;
     }
     return (
         <div className='cards'>
-            {cardsToTheGame.map((card, index) => <Card key={index} question={card.question} answer={card.answer} id={card.id}  />)}
+            {cardsToTheGame.map((card, index) => <Card key={index} question={card.question}
+            answer={card.answer} id={card.id} setCounter={setCounter} counter={counter}
+            icons={icons} setAnsweredIcons={setAnsweredIcons} />)}
         </div>
     )
 }

@@ -22,7 +22,6 @@ body {
 
 p {
     font-weight: 400;
-    color: red;
 }
 
 h1 {
@@ -58,6 +57,7 @@ h1 {
 }
 
 .recall-screen {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,7 +77,7 @@ h1 {
 
 .cards {
     width: 80%;
-    margin-top: 51px;
+    margin: 51px 0 70px;
 }
 
 .card {
@@ -150,18 +150,58 @@ h1 {
     background-color: rgba(255, 146, 46, 1);
 }
 
-.no-recall span, .almost-recall span, .zap span {
+.no-recall span,
+.almost-recall span,
+.zap span {
     text-decoration-line: line-through;
 }
 
-.no-recall span, .no-recall ion-icon {
+.no-recall span,
+ion-icon[name='close-circle-sharp'] {
     color: rgba(255, 48, 48, 1);
 }
 
-.almost-recall span, .almost-recall ion-icon {
+.almost-recall span,
+ion-icon[name='help-circle-sharp'] {
     color: rgba(255, 146, 46, 1);
 }
 
-.zap span, .zap ion-icon {
+.zap span,
+ion-icon[name='checkmark-circle-sharp'] {
     color: rgba(47, 190, 52, 1);
+}
+
+ion-icon[name='close-circle-sharp'],
+ion-icon[name='help-circle-sharp'],
+ion-icon[name='checkmark-circle-sharp'] {
+    width: 23px;
+    height: 23px;
+}
+
+.counter {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px -4px 6px 0px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter p {
+    font-size: 18px;
+}
+
+.icons {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.icons ion-icon {
+    margin: 0 2.5px;
 }
